@@ -84,8 +84,12 @@ def p_fun_condicion_2(p):
 
 
 def p_expression(p):
-    'expression : var operadores var'
+    'expression : var operadores var otroex'
     pass
+def p_otroex(p):
+    ''' otroex : Y expression 
+    | O expression
+    | empty'''
 
 
 def p_operadores(p):
